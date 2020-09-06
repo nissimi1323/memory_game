@@ -42,10 +42,10 @@ body {
   transform: rotateY(180deg);
 }
 
-.back-face {
-  /* display: flex; */
-  width: 150px;
-  height: 203px;
+.front-face, .back-face {
+  display: flex;
+  width: 100%;
+  height: 100%;
   padding: 20px;
   position: absolute;
   border-radius: 5px;
@@ -53,23 +53,6 @@ body {
   backface-visibility: hidden;
   /*each card has 2 sides backface is mirror image of the front and need to hide it*/
 }
-
-.front-face {
-  /* display: flex; */
-  width: 150px;
-  height: 203px;
-  padding: 20px;
-  position: absolute;
-  border-radius: 5px;
-  background: #1C7CCC;
-  /* backface-visibility: hidden; */
-  /*each card has 2 sides backface is mirror image of the front and need to hide it*/
-}
-
-/* .front-face, .back-face, img {
-  width: 100%;
-  height: 100%;
-} */
 
 .front-face {
   transform: rotateY(180deg);
